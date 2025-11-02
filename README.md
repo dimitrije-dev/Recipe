@@ -1,54 +1,95 @@
-Recipe (Practice Project)
-This is a simple practice Swift project for managing recipes. It’s mainly for learning purposes and experimenting with app architecture and SwiftUI basics.
+# 🍳 Recipe (Practice Project)
 
-Project Architecture
-MVVM (Model-View-ViewModel):
+![Swift](https://img.shields.io/badge/Swift-5.9-orange?logo=swift)
+![Platform](https://img.shields.io/badge/Platform-iOS-lightgrey?logo=apple)
+![UI](https://img.shields.io/badge/UI-SwiftUI-blue?logo=swift)
+![Architecture](https://img.shields.io/badge/Architecture-MVVM-green)
+![Status](https://img.shields.io/badge/Status-Practice%20Project-yellow)
 
-The codebase is split into Models, ViewModels, and Views to keep business logic, data, and UI concerns separate and organized.
+A simple **SwiftUI** practice project for managing and viewing recipes — built to learn and experiment with **app architecture** and **SwiftUI fundamentals**.
 
-Main Structure & Notable Files
-Recipe.xcodeproj
-Project file for building in Xcode.
+---
 
-Recipe/Model
-Contains recipe data structures and related logic.
+## 🧠 Project Overview
 
-Recipe/ViewModel
-Handles app state and business logic, connecting data to views.
+This project demonstrates how to structure a SwiftUI app using the **MVVM (Model–View–ViewModel)** pattern — keeping **UI**, **data**, and **business logic** cleanly separated and easy to maintain.
 
-Recipe/Views
-Contains all SwiftUI view files, including:
+---
 
-ContentView.swift – Main app view.
+## 🏗️ Architecture: MVVM
 
-ListItemView.swift – List item UI for recipes.
+```
+Recipe
+├── Model          # Data structures & logic
+├── ViewModel      # Business logic & state management
+└── Views          # SwiftUI interface components
+```
 
-RecipeDetailsView.swift – Detailed recipe info screen.
+### 📂 Main Structure & Key Files
 
-RecipeView.swift – Recipe overview.
+| Path                     | Description                                    |
+| ------------------------ | ---------------------------------------------- |
+| `Recipe.xcodeproj`       | Xcode project file                             |
+| `Recipe/Model`           | Contains recipe data models and related logic  |
+| `Recipe/ViewModel`       | Manages app state and connects data with views |
+| `Recipe/Views`           | All SwiftUI view files for the UI              |
+| `RecipeApp.swift`        | App entry point                                |
+| `Recipe/Assets.xcassets` | App icons, accent colors, and recipe images    |
 
-SettingsView.swift – App settings UI.
+---
 
-RecipeApp.swift
-The entry point for the app.
+## 🎨 Views Breakdown
 
-Recipe/Assets.xcassets
-All app images and icons:
+* **`ContentView.swift`** – Main entry view of the app
+* **`ListItemView.swift`** – Displays individual recipe items in a list
+* **`RecipeDetailsView.swift`** – Shows detailed information for a selected recipe
+* **`RecipeView.swift`** – General recipe overview screen
+* **`SettingsView.swift`** – Simple app settings interface
 
-AccentColor
+---
 
-AppIcon
+## 🖼️ Assets
 
-Recipe images (Apple Pie, Pizza, Hummus, etc.)
+Located in `Recipe/Assets.xcassets`:
 
-Purpose
-This repo is meant for practice and is not intended as a production app. It mainly demonstrates:
+* `AppIcon`
+* `AccentColor`
+* Recipe images: *Apple Pie*, *Pizza*, *Hummus*, etc.
 
-Basic MVVM structure in SwiftUI
+---
 
-Simple navigation between screens
+## 🎯 Purpose
 
-Using image assets in iOS
+This project is **not intended for production**, but serves as a hands-on learning exercise for:
 
-Organizing code for clarity and maintainability
+* ✅ Practicing **SwiftUI** and **MVVM architecture**
+* ✅ Understanding **state management** and **data flow**
+* ✅ Implementing **simple navigation**
+* ✅ Using **image assets** effectively
+* ✅ Writing **clean, organized, and maintainable code**
 
+---
+
+## 🚀 Getting Started
+
+1. **Clone the repository**
+
+   ```bash
+   git clone https://github.com/your-username/Recipe.git
+   ```
+2. **Open the project in Xcode**
+
+   ```bash
+   open Recipe.xcodeproj
+   ```
+3. **Run the app**
+
+   * Use the **iOS Simulator** or a **connected device**.
+
+---
+
+## 💡 Notes
+
+This is a **learning-focused** project — ideal for exploring app architecture, building small features, and experimenting with SwiftUI.
+
+---
